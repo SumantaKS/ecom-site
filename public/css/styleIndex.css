@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom right,
+    rgb(210, 106, 106),
+    rgb(153, 153, 227)
+  );
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* default: linear-gradient(
+    to bottom right,
+    rgb(210, 106, 106),
+    rgb(153, 153, 227)
+  );
+o: linear-gradient(
+    to bottom right,
+    rgb(39, 210, 240),
+    rgb(247, 247, 251)
+  );
+c: linear-gradient(
+    to bottom right,
+    rgb(144, 82, 224),
+    rgb(165, 194, 229)
+  );
+t: linear-gradient(
+    to bottom right,
+    rgba(255, 159, 163, 255),
+    rgb(165, 194, 229)
+  );
+a: linear-gradient(
+    to bottom right,
+    rgb(70, 73, 76),
+    rgb(229, 112, 130)
+  );
+n: linear-gradient(
+    to bottom right,
+    rgb(38, 3, 76),
+    rgb(241, 30, 61)
+  );
+e: 
+ */
+.container-items {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 18rem;
+}
+
+.item {
+  position: relative;
+  font-family: "Press Start 2P", cursive;
+  font-size: 14rem;
+  transition: all 300ms ease-in-out;
+  flex-grow: 1;
+}
+.item:hover {
+  flex-grow: 2;
+  font-size: 24rem;
+}
+
+h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+}
+
+img {
+  width: 100%;
+}
+.container-image {
+  position: absolute;
+  top: -60rem;
+  left: -5rem;
+  width: 24rem;
+  height: 32rem;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: none;
+}
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+@media (max-width: 900px) {
+  .container-items {
+    height: 100px;
+  }
+  .item {
+    font-size: 20px;
+  }
+  .item:hover {
+    flex-grow: 1;
+    font-size: 20px;
+  }
+  .container-image {
+    display: none;
+  }
+  .navbar {
+    display: none !important;
+  }
+}
+
+.logo {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 100px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 40px;
+  line-height: 100px;
+}
+.loginLink {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu {
+  display: flex;
+}
+.menu-item {
+  margin-left: 3.8rem;
+}
+.header {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  top: 20%;
+  z-index: 2;
+}
+
+.showreel {
+  margin: 40px 0;
+}
+.showreel a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+.login {
+  display: flex;
+  gap: 3.8rem;
+}
+.span {
+  font-weight: 600;
+}
+.logout {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

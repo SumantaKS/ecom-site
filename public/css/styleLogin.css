@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* background: linear-gradient(to bottom right, black, rgb(87, 86, 86)); */
+  background: url("../img/body.jpg");
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(43, 54, 111, 0.316);
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  width: 60%;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(75, 0, 128, 0);
+  backdrop-filter: blur(12px);
+  /* z-index: 999; */
+}
+.left {
+  width: 40%;
+  /* background-color: black; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.right {
+  width: 60%;
+  max-height: auto;
+  /* background-color: aqua; */
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px 0 0 50px;
+}
+.logo {
+  font-family: "Press Start 2P", cursive;
+  background: -webkit-linear-gradient(#eee, #db4ec8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* .moto {
+  background: -webkit-linear-gradient(#eee, #db4ec8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: large;
+  font-weight: 800;
+} */
+.section2 {
+  font-family: "Abel", sans-serif;
+}
+.section3,
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Abel", sans-serif;
+}
+.inputWrap {
+  gap: 5px;
+}
+.section3 {
+  gap: 20px;
+}
+input {
+  border-radius: 20px;
+  width: 15rem;
+  height: 2rem;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  border: solid rgb(156, 150, 150);
+  outline: none;
+  color: white;
+  border-width: thin;
+}
+.section4 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Abel", sans-serif;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.btn {
+  background: rgba(225, 255, 0, 0.445);
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+a.btn {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

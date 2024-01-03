@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONSOLE - OCTANE</title>
+    <link rel="stylesheet" href="css/stylePhone.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    /> -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <script src="js/scriptPhone.js" defer></script>
+  </head>
+  <body>
+    <div class="container1">
+      <section class="nav">
+        <div class="console">Octane Console Pro</div>
+        <div class="navList">
+          <a href="/">Home</a>
+          <a href="/login">LogIn</a>
+          <p>Hello <span class="span"> <%= name %> </span></p>
+          <form action="/logout?_method=DELETE" method="POST">
+            <button class="logout" type="submit">LogOut</button>
+          </form>
+          <button class="buy stripeBtn">Buy</button>
+        </div>
+      </section>
+      <div class="tagline">Next.Gen.Gaming.</div>
+    </div>
+    <img
+      class="video"
+      src="img/consoleproduct.jpg"
+      width="100%"
+    ></img>
+    <div class="container2">
+      <section class="container2child">
+        <div class="consoleNames">Octane Console Pro & Octane Console Pro X</div>
+        <div class="consolePrices">
+          From £39.99/month or £499 exchange offer
+        </div>
+      </section>
+      <button class="container2btn stripeBtn">Buy</button>
+    </div>
+    <section class="description">
+      <div class="container3">
+        <div class="dynamic card">
+          <div class="dynamicTxtDiv">
+            <p class="dynamicTxt">Dynamic</p>
+            <p class="dynamicTxt">Color Panels.</p>
+          </div>
+          <img
+            class="dynamicImg"
+            src="img/consolecolour.jpg"
+            alt="Images of console with dynamic  colors"
+            width="100%"
+          />
+        </div>
+        <div class="cameraChip">
+          <div class="camera card">
+            <div class="cameraTxtDiv">
+              <p class="cameraTxt">Superb resolution</p>
+              <p class="cameraTxt">4k resolution at 100 fps</p>
+            </div>
+            <img
+              class="cameraImg"
+              src="img/consolecamera.jpg"
+              alt="image of a gameplay"
+              width="100%"
+            />
+          </div>
+          <div class="chip card">
+            <div class="chipTxtDiv">
+              <p class="chipTxt">Fastest</p>
+              <p class="chipTxt">GPU in the market.</p>
+            </div>
+            <img
+              class="chipImg"
+              src="img/chip.jpg"
+              alt="image of processor"
+              width="100%"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container4">
+        <div class="battery card">
+          <div class="batteryTxtDiv">
+            <p class="batteryTxt">Play</p>
+            <p class="batterTxt">without power for</p>
+            <p class="batteryTxt">more than 24 hours</p>
+          </div>
+        </div>
+        <div class="film card">
+          <div class="filmTxtDiv">
+            <p class="filmTxt1">Screencapture</p>
+            <p class="filmTxt2">like a FILM.</p>
+          </div>
+          <video
+            class="filmVid"
+            autoplay
+            muted
+            loop
+            width="100%"
+            src="img/film.mp4"
+          ></video>
+        </div>
+      </div>
+      <div class="container5">
+        <div class="action card">
+          <div class="actionTxtDiv">
+            <p class="actionTxt actionTxt1">ESPN Package</p>
+            <p class="actionTxt">Now stream sports,</p>
+            <p class="actionTxt">on your console.</p>
+          </div>
+          <video
+            class="actionVid"
+            autoplay
+            muted
+            loop
+            src="img/action.mp4"
+          ></video>
+        </div>
+        <div class="gaming card">
+          <div class="gamingTxtDiv">
+            <p class="gamingTxt gamingTxt1">With Remote Play</p>
+            <p class="gamingTxt">Game.ON.</p>
+          </div>
+          <video
+            class="gamingVid"
+            autoplay
+            muted
+            loop
+            src="img/gaming.mp4"
+          ></video>
+        </div>
+      </div>
+      <div class="container6">
+        <div class="left">
+          <div class="screen card">
+            <div class="screenTxtDiv">
+              <p class="screenTxt screenTxt1">Pro Controller XS</p>
+              <p class="screenTxt">Now with haptic feedback</p>
+            </div>
+            <img
+              class="screenImg"
+              src="img/consolecontroller.jpg"
+              alt="image of controller"
+              width="100%"
+            />
+          </div>
+          <div class="selfie card">
+            <div class="selfieTxtDiv">
+              <p class="selfieTxt">Official camera that delivers quality</p>
+            </div>
+            <img
+              class="selfieImg"
+              width="100%"
+              src="img/consoleselfie.jpg"
+              alt="selfie"
+            />
+          </div>
+        </div>
+        <div class="right">
+          <div class="water card">
+            <div class="waterTxtDiv">
+              <p class="waterTxt waterTxt1">VR Experience</p>
+              <p class="waterTxt">At 4k resolution</p>
+            </div>
+            <img
+              class="waterImg"
+              width="100%"
+              src="img/consolewater.jpg"
+              alt="image of phone inwater"
+            />
+          </div>
+          <div class="night card">
+            <div class="nightTxtDiv">
+              <p class="nightTxt nightTxt1">HDR 2000PS</p>
+              <p class="nightTxt">Now dark scenes show true black</p>
+            </div>
+            <video
+              class="nightVid"
+              autoplay
+              muted
+              loop
+              src="img/night.mp4"
+            ></video>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

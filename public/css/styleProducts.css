@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+.productContainer {
+  height: 400vh;
+  display: flex;
+}
+.gamepadContainer {
+  height: 300vh;
+}
+.gpuContainer {
+  height: 300vh;
+}
+.monitorContainer {
+  height: 300vh;
+}
+.phoneContainer {
+  height: 300vh;
+}
+.imgProductWrap {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+  overflow: hidden;
+}
+.imgProduct {
+  width: 100%;
+  height: 100vh;
+  transition: transform 0.5s ease;
+}
+.imgProductWrap:hover img {
+  transform: scale(1.2);
+}
+.consoleInfo {
+  width: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(106, 186, 210),
+    rgb(114, 229, 133)
+  );
+}
+.consoleInfo div {
+  color: rgb(8, 70, 1);
+}
+.laptopInfo {
+  width: 50%;
+  background: linear-gradient(
+    to bottom left,
+    rgb(100, 50, 192),
+    rgb(224, 57, 199)
+  );
+}
+.laptopInfo div {
+  color: rgb(244, 248, 245);
+}
+.gamepadInfo {
+  width: 50%;
+  background: linear-gradient(to right, rgb(250, 126, 242), rgb(0, 179, 255));
+}
+.gamepadInfo div {
+  color: rgb(51, 85, 60);
+}
+.gpuInfo {
+  width: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(38, 105, 4),
+    rgb(215, 225, 218)
+  );
+}
+.gpuInfo div {
+  color: rgb(2, 3, 62);
+}
+.monitorInfo {
+  width: 50%;
+  background: linear-gradient(to left, rgb(30, 34, 56), rgb(169, 80, 80));
+}
+.monitorInfo div {
+  color: rgb(173, 214, 189);
+}
+.phoneInfo {
+  width: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(38, 128, 211),
+    rgb(232, 243, 24)
+  );
+}
+.phoneInfo div {
+  color: rgb(2, 3, 62);
+}
+
+.info div {
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  padding-left: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem !important;
+}
+
+.des {
+  display: flex;
+  flex-direction: column;
+}
+.buy {
+  color: black;
+  font-size: 1.4rem;
+}

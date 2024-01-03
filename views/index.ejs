@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OCTANE</title>
+    <link rel="stylesheet" href="css/styleIndex.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    /> -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <script src="https://unpkg.co/gsap/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  </head>
+  <body>
+    <div class="hero-section">
+      <div class="logo">OCTANE</div>
+      <div class="navbar">
+        <div class="login">
+          <a class="loginLink" href="/login">LogIn/SignUp</a>
+          <p>Hello <span class="span"> <%= name %> </span></p>
+          <form action="/logout?_method=DELETE" method="POST">
+            <button class="logout" type="submit">LogOut</button>
+          </form>
+        </div>
+        <div class="menu">
+          <div class="menu-item"><a href="/products">PRODUCTS</a></div>
+          <div class="menu-item"><a href="/about">ABOUT</a></div>
+          <div class="menu-item"><a href="/contact">CONTACT</a></div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="header-left">
+          PLAY.<br /><span>CONQUER.</span><br /><span>VICTORY.</span>
+          <div class="showreel">
+            <a href="/about">know more</a>
+          </div>
+        </div>
+        <div class="header-right"><a href="/products">/ALL PRODUCTS</a></div>
+      </div>
+      <div class="container">
+        <div class="container-items">
+          <div class="container-image">
+            <div class="image"></div>
+          </div>
+          <div class="item">
+            <a href="/console" class="container-item o" data-img="img/o.jpg">
+              <h3>O</h3>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/laptop" class="container-item c" data-img="img/c.jpg">
+              <h3>C</h3>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/gamepad" class="container-item t" data-img="img/t.jpg">
+              <h3>T</h3>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/gpu" class="container-item a" data-img="img/a.jpg">
+              <h3>A</h3>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/monitor" class="container-item n" data-img="img/n.jpg">
+              <h3>N</h3>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/phone" class="container-item e" data-img="img/e.jpg">
+              <h3>E</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/scriptIndex.js" defer></script>
+  </body>
+</html>
